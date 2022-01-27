@@ -15,6 +15,7 @@ const db = mysql.createConnection({
 db.connect(function(err){
     if(err) throw err;
     console.log('CONNECTED SQL SUCCESSFUL');
+    trackerChoice();
 })
 
 const trackerChoice = () => {
@@ -71,10 +72,7 @@ const trackerChoice = () => {
         });
 };
 
-const allDepartments = () => {
-    const sql = `SELECT * FROM department`;
-    console.table(sql);
-};
+
 const allDepartments = () => {
     db.query(`SELECT * FROM department`, (err, rows) => {
         if(err){
@@ -261,4 +259,4 @@ const updateRole = () => {
     });
 };
 
-trackerChoice();
+
