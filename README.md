@@ -14,7 +14,6 @@
  ## Installation
  You can download this repository and run the app by installing the npm packages first and then the node index command to run the application.
 
- you can also follow the instructions in this video 
  
  ## Usage
  use node index to run the app and follow the instructions given in the prompts in the command line 
